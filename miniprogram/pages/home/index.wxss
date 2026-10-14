@@ -1,0 +1,1 @@
+.hero{display:flex;align-items:center;justify-content:space-between;background:#DFE9D8;border-radius:36rpx;padding:34rpx}.hero .section{margin:22rpx 0}.hero-art{font-size:116rpx}

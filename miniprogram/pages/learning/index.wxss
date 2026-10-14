@@ -1,0 +1,1 @@
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:20rpx;margin-top:32rpx}.item-label{flex:1}.empty button{margin-top:28rpx}

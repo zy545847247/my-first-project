@@ -1,0 +1,2 @@
+const storage=require('../../services/storage');
+Page({data:{profile:{},nickname:'',editing:false},onShow(){const profile=storage.read();this.setData({profile,nickname:profile.nickname});},edit(){this.setData({editing:!this.data.editing});},input(e){this.setData({nickname:e.detail.value});},save(){try{const profile=storage.rename(this.data.nickname);this.setData({profile,editing:false});}catch(_){wx.showToast({title:'昵称未保存，请重试',icon:'none'});}},collection(){wx.switchTab({url:'/pages/learning/index'});}});

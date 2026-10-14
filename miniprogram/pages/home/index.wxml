@@ -1,0 +1,9 @@
+<view class="page">
+<view class="row"><text class="eyebrow">LITTLE WORLD · 小小世界</text><text class="pill">亲子共看</text></view>
+<view class="title">你好，{{profile.nickname}}<view>今天想发现什么？</view></view>
+<text class="muted">从一个小小的好奇，认识大大的世界。</text>
+<view class="panel row"><view class="stat"><view class="count">{{profile.days.length || 0}}</view><text class="muted">探索天数</text></view><view class="stat"><view class="count">{{profile.viewed.length || 0}}</view><text class="muted">看过的词卡</text></view><view class="stat"><view class="count">50</view><text class="muted">等待发现</text></view></view>
+<view class="hero" bindtap="start"><view><text class="eyebrow">TODAY'S LITTLE ADVENTURE</text><view class="section">一起看看小世界</view><text class="link">{{profile.lastWord ? '继续上次探索' : '从小猫开始'}} →</text></view><text class="hero-art">🌱</text></view>
+<view class="row section"><text>选一个喜欢的世界</text><text class="muted">5 个主题</text></view>
+<view class="grid"><view wx:for="{{categories}}" wx:key="id" class="category" style="background:{{item.background}}" bindtap="openCategory" data-id="{{item.id}}"><text class="category-art">{{item.emoji}}</text><view class="category-name">{{item.name}}</view><text class="muted">10 个小发现 →</text></view></view>
+<view class="footer">和宝宝一起看，也一起在生活里找一找。</view></view>

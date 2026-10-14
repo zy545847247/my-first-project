@@ -1,0 +1,1 @@
+.word{text-align:center;margin:34rpx 0 40rpx}.pinyin{font-size:34rpx;color:#8C9A8B;letter-spacing:3rpx}.name{font-size:82rpx;font-weight:600;margin:12rpx 0 20rpx}.actions{display:grid;grid-template-columns:1fr 1fr;gap:22rpx;margin-top:22rpx}.previous{background:transparent;color:#7A887F;margin-top:12rpx}

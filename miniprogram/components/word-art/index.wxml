@@ -1,0 +1,6 @@
+<view class="art {{active ? 'bounce' : ''}}" bindtap="tap" role="button" aria-label="{{word.name}}，点击听读音">
+  <image wx:if="{{word.image}}" src="{{word.image}}" mode="aspectFit" class="image" />
+  <view wx:elif="{{word.color}}" class="swatch" style="background:{{word.color}}"></view>
+  <text wx:else class="emoji">{{word.emoji}}</text>
+  <text class="spark one">✦</text><text class="spark two">✧</text><view class="bubble"></view>
+</view>

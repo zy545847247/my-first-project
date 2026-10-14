@@ -1,0 +1,1 @@
+.tiles{margin-top:32rpx}.tile{background:white;border-radius:28rpx;padding:18rpx}.mini-art{height:180rpx;display:flex;align-items:center;justify-content:center;font-size:96rpx;border-radius:22rpx;margin-bottom:18rpx}.seen{font-size:20rpx;color:#6D8D6C}
